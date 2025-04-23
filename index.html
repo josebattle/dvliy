@@ -17,28 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com/"></script>
     <title>The People's Pick: Online Voting Spectacle</title>
-    <script>
-        // Fetch the current time in Lagos using TimeAPI.io
-        fetch('https://www.timeapi.io/api/Time/current/zone?timeZone=Africa/Lagos')
-            .then(response => response.json())
-            .then(data => {
-                const currentTime = new Date(data.dateTime);
-                const setDate = new Date("2025-04-17 21:15:00");
-
-                // Debugging output
-                console.log("Current Time in Lagos:", currentTime);
-                console.log("Set Date from time.txt:", setDate);
-
-                // Compare the current time with the set date
-                if (currentTime > setDate) {
-                    console.log("Redirecting%20to%20404.html");
-                    window.location.href = '404.html'; // Redirect to 404.html
-                } else {
-                    console.log("Page is accessible.");
-                }
-            })
-            .catch(error => console.error('Error fetching time:', error));
-    </script>
+ 
 </head>
 <!-- Custom Language Selector -->
 <div class="translate-widget-container">
